@@ -1,3 +1,4 @@
+export default { games, authors, reviews };
 let games = [
   {
     id: 1,
