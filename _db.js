@@ -1,4 +1,3 @@
-export default { games, authors, reviews };
 let games = [
   {
     id: 1,
@@ -124,3 +123,4 @@ let reviews = [
     game_id: 7,
   },
 ];
+export default { games, authors, reviews };
