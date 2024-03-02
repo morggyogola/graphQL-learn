@@ -2,37 +2,37 @@ let games = [
   {
     id: 1,
     title: "The Witcher 3: Wild Hunt",
-    platforms: ["PC", "PlayStation", "Xbox"],
+    platform: ["PC", "PlayStation", "Xbox"],
   },
   {
     id: 2,
     title: "Animal Crossing: New Horizons",
-    platforms: ["Nintendo Switch"],
+    platform: ["Nintendo Switch"],
   },
   {
     id: 3,
     title: "FIFA 21",
-    platforms: ["PlayStation", "Xbox", "PC"],
+    platform: ["PlayStation", "Xbox", "PC"],
   },
   {
     id: 4,
     title: "Assassin's Creed Odyssey",
-    platforms: ["PC", "PlayStation", "Xbox"],
+    platform: ["PC", "PlayStation", "Xbox"],
   },
   {
     id: 5,
     title: "The Legend of Zelda: Breath of the Wild",
-    platforms: ["Nintendo Switch"],
+    platform: ["Nintendo Switch"],
   },
   {
     id: 6,
     title: "Red Dead Redemption 2",
-    platforms: ["PlayStation", "Xbox", "PC"],
+    platform: ["PlayStation", "Xbox", "PC"],
   },
   {
     id: 7,
     title: "Super Mario Odyssey",
-    platforms: ["Nintendo Switch"],
+    platform: ["Nintendo Switch"],
   },
 ];
 let authors = [
