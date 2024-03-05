@@ -42,6 +42,14 @@ const resolvers = {
       return db.authors.find((b) => b.id === parent.author_id);
     },
   },
+  Mutation: {
+    deleteGame(_, args) {
+      return db.games.filter((d) => d.id !== args.id);
+    },
+    addGame(_, args) {
+      return db.games.push((a) => a.id === args.id);
+    },
+  },
 };
 
 //server setup
