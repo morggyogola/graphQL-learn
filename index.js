@@ -44,15 +44,30 @@ const resolvers = {
   },
   Mutation: {
     deleteGame(_, args) {
-      return db.games.filter((d) => d.id !== args.id);
+      db.games = db.games.filter((d) => d.id !== args.id);
+      return db.games;
     },
     addGame(_, args) {
-      return db.games.push((a) => a.id === args.id);
+      let game = {
+        ...args.game,
+        id: Math.floor(Math.random() * 10000).toString(),
+      };
+      db.games.push(game);
+      return game;
+    },
+    updateGame(_, args) {
+      db.games = db.games.map((g) => {
+        if (g.id == args.id) {
+          return { ...g, ...args.edits };
+        }
+        return g;
+      });
+      return db.games.find((g) => g.id === args.id);
     },
   },
 };
 
-//server setup
+//server setupc
 const server = new ApolloServer({
   typeDefs,
   resolvers,
